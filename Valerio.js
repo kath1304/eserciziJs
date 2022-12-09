@@ -68,7 +68,7 @@ console.log(listToArray(arrayToList([1,2,3])))
 //ESERCIZIO 4
 
 const deepEqual = (x, y) => {
-    if((typeof x == "object") && (x != null) && (typeof y == "object") && (y != null)) {
+    if((typeof x === "object") && (x != null) && (typeof y === "object") && (y != null)) {
         let bool = true
         let keyX = Object.keys(x)
         let keyY = Object.keys(y)
@@ -87,4 +87,3 @@ console.log(deepEqual(obj, {here: 1, object: 2}));
 // → false
 console.log(deepEqual(obj, {here: {is: "an"}, object: 2}));
 // → true
-console.log(deepEqual(3,2))
